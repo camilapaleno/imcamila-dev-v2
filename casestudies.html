@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>ello</title>
+    <script src="https://kit.fontawesome.com/3d80b76294.js" crossorigin="anonymous"></script>
+
+    <script src="./app.js"></script>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+* {
+  box-sizing:border-box
+}
+
+body {
+  background:linear-gradient(62deg,#c93072 5%,#3365c0) fixed;
+}
+
+h1 {
+  color: white;
+  text-align:center;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom:0;
+}
+
+.line {
+  width:100px;
+  height:1px;
+  margin:20px auto 40px auto;
+  border-bottom:1px solid white;
+}
+
+img {
+  width:100%;
+  display:block;
+}
+
+.container {
+  width:50%;
+  display:block;
+  margin:30px auto
+}
+
+#before-after-slider {
+  width:100%;
+  position:relative;
+  overflow:hidden;
+  border:3px solid white;
+}
+
+#after-image {
+  display:block
+}
+
+#before-image {
+  position:absolute;
+  height:100%;
+  width:50%;
+  top:0;
+  left:0;
+  overflow:hidden;
+  z-index:2;
+}
+
+#resizer {
+  position:absolute;
+  display:flex;
+  align-items:center;
+  z-index:5;
+  top:0;
+  left:50%;
+  height:100%;
+  width:4px;
+  background:white;
+  /*Stop vertical scrolling on touch*/
+  -ms-touch-action: pan-y;
+    touch-action: pan-y;
+}
+
+#resizer:after {
+  background:linear-gradient(62deg,#c93072 5%,#3365c0);
+  font-family: "Font Awesome 5 Free";
+  content:'\f337';
+  font-weight:900;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  position:absolute;
+  margin: 0 0 0 -22px;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  border:3px solid white;
+
+}
+
+@media (max-width:767px) {
+  .container {
+    width:100%;
+    padding:0 20px
+  }
+}
+
+
+
+    </style>
+  </head>
+  
+  <body>
+    <div class="nav">
+      <ul>
+        <li><a href="./index.html">camila paleno</a></li>
+        <li><a href="./resume.html">resume</a></li>
+        <li><i class="fa-brands fa-linkedin"></i> <i class="fa-brands fa-codepen"></i> <i class="fa-brands fa-github"></i> <i class="fa-solid fa-envelope"></i></li>
+      </ul>
+    </div>
+
+    <div class="case_studies">
+      <div class="case_study nei">
+        <h2>NEI (2021 - present)</h2>
+        <br>
+        <p>NEI is an educational company that provides professionals with online resources, continuing education, and inperson/online conferences.
+          <br>
+          I was hired to redo and maintain their website, which is very important to their users.
+          <br>
+          The main concern was that the website was largely inaccessible on small screens.
+          <br><br>
+          I created mock ups for everything in Adobe Xd and created all illustrations in Adobe Illustrator.
+          <br>
+          In order to create a website compatible with NEI's custom built backend system, I made everything with HTML, CSS and vanilla Javascript.
+        </p>
+        <br><br>
+        <h1>Vanilla JS Responsive Before &amp; After Slider</h1>
+        <div class="line"></div>
+      
+      <div class="container">
+      
+       
+        
+        <div id="before-after-slider">
+          <div id="before-image">
+            <img src="https://images.pexels.com/photos/3728078/pexels-photo-3728078.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="before"/>
+          </div>
+        
+          <div id="after-image">
+            <img src="https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="After"/>
+          </div>
+      
+          <div id="resizer"></div>
+        
+       </div>
+
+               
+       <div id="before-after-slider">
+        <div id="before-image">
+          <img src="https://images.pexels.com/photos/3728078/pexels-photo-3728078.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="before"/>
+        </div>
+      
+        <div id="after-image">
+          <img src="https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="After"/>
+        </div>
+    
+        <div id="resizer"></div>
+      
+     </div>
+      </div>
+
+<!--         <div class="buttons">
+          <button>homepage</button>
+          <button>about</button>
+          <button>libraries</button>
+          <button>dashboards</button>
+          <button>forms</button>
+          <button>products</button>
+        </div> -->
+<!--         <div class="case_study--section" id="homepage">
+          <h3>Homepage</h3>
+          <img src="./assets/neicaseArtboard 1@2x.png">
+          <div>
+            <p>The navigation bar was completely redone. The design is simple and split into two sections- the upper bar which includes the search bar, cart, and login/account button, and the lower bar which includes a dropdown menu. 
+              <br>
+              The module below is a mobile-responsive HTML slider that rotates every 6 seconds. I avoided a simple image slider due to the cropping issues on different screen sizes. This space is where the company can make important announcements.</p>
+            <img src="./assets/neicaseArtboard 1_1@2x.png">
+          </div>
+          <div>
+            <p> The next module includes two areas that NEI finds are most important to their company: NEI Membership (which allows members access to a wide variety of online resources) and NEI Meetings (which are hosted in person and online a few times a year).
+              <br>
+              The illustrations, also created by me, highlight something that sets NEI apart from other education companies; their use of illustrations and icons to demonstrate complex ideas</p>
+            <img src="./assets/neicaseArtboard 1_2@2x.png">
+          </div>
+          <div>
+            <p>The next modules include an easy way access to some of NEI’s online resources: activites, portals, libraries, news, apps, and the NEI podcast</p>
+            <img src="./assets/neicaseArtboard 1_3@2x.png">
+          </div>
+          <div>
+            <p>The footer was totally redone to include more ways to access all of NEI’s resources. It also includes information about NEI, social media links, and legal information.</p>
+            <img src="./assets/neicaseArtboard 1_4@2x.png">
+          </div>
+        </div>
+        <div class="case_study--section" id="about">
+          <h3>About</h3>
+          <img src="./assets/neicaseArtboard 8_3@2x.png">
+          <div>
+            <p>The navigation bar was completely redone. The design is simple and split into two sections- the upper bar which includes the search bar, cart, and login/account button, and the lower bar which includes a dropdown menu. 
+              <br>
+              The module below is a mobile-responsive HTML slider that rotates every 6 seconds. I avoided a simple image slider due to the cropping issues on different screen sizes. This space is where the company can make important announcements.</p>
+            <img src="./assets/neicaseArtboard 9_2@2x.png">
+          </div>
+          <div>
+            <p>The navigation bar was completely redone. The design is simple and split into two sections- the upper bar which includes the search bar, cart, and login/account button, and the lower bar which includes a dropdown menu. 
+              <br>
+              The module below is a mobile-responsive HTML slider that rotates every 6 seconds. I avoided a simple image slider due to the cropping issues on different screen sizes. This space is where the company can make important announcements.</p>
+            <img src="./assets/neicaseArtboard 21@2x.png">
+          </div>
+          <div>
+            <p>The navigation bar was completely redone. The design is simple and split into two sections- the upper bar which includes the search bar, cart, and login/account button, and the lower bar which includes a dropdown menu. 
+              <br>
+              The module below is a mobile-responsive HTML slider that rotates every 6 seconds. I avoided a simple image slider due to the cropping issues on different screen sizes. This space is where the company can make important announcements.</p>
+            <img src="./assets/neicaseArtboard 22@2x.png">
+          </div>
+
+        </div>
+        <div class="case_study--section" id="libraries">
+          <h3>Libraries</h3>
+          <div>
+            <img src="./assets/librariesArtboard 8_6@2x.png">
+            <img src="./assets/librariesArtboard 8_5@2x.png">
+            
+          </div>
+        </div>
+        <div class="case_study--section" id="info">
+          <h3>Informational/Product</h3>
+
+          <div>
+            <img src="./assets/neicaseArtboard 8_8@2x.png">
+            <img src="./assets/neicaseArtboard 8_7@2x.png">
+            
+          </div>
+          <div>
+            <img src="./assets/neicaseArtboard 8_10@2x.png">
+            <img src="./assets/neicaseArtboard 8_9@2x.png">
+            
+          </div>
+          <div>
+            <img src="./assets/neicaseArtboard 8_12@2x.png">
+            <img src="./assets/neicaseArtboard 8_11@2x.png">
+            
+          </div>
+        </div> -->
+
+<!--         <div class="case_study--section" id="dashboards">
+          <h3>Dashboards</h3>
+          <img src="./assets/homepageArtboard 1@2x.png">
+          <div>
+            <p>The navigation bar was completely redone. The design is simple and split into two sections- the upper bar which includes the search bar, cart, and login/account button, and the lower bar which includes a dropdown menu. 
+              <br>
+              The module below is a mobile-responsive HTML slider that rotates every 6 seconds. I avoided a simple image slider due to the cropping issues on different screen sizes. This space is where the company can make important announcements.</p>
+            <img src="./assets/homepageArtboard 1_1@2x.png">
+          </div>
+        </div>
+
+        <div class="case_study--section" id="forms">
+          <h3>Forms</h3>
+          <img src="./assets/homepageArtboard 1@2x.png">
+          <div>
+            <p>The navigation bar was completely redone. The design is simple and split into two sections- the upper bar which includes the search bar, cart, and login/account button, and the lower bar which includes a dropdown menu. 
+              <br>
+              The module below is a mobile-responsive HTML slider that rotates every 6 seconds. I avoided a simple image slider due to the cropping issues on different screen sizes. This space is where the company can make important announcements.</p>
+            <img src="./assets/homepageArtboard 1_1@2x.png">
+          </div>
+        </div>
+
+        <div class="case_study--section" id="products">
+          <h3>Products</h3>
+          <img src="./assets/homepageArtboard 1@2x.png">
+          <div>
+            <p>The navigation bar was completely redone. The design is simple and split into two sections- the upper bar which includes the search bar, cart, and login/account button, and the lower bar which includes a dropdown menu. 
+              <br>
+              The module below is a mobile-responsive HTML slider that rotates every 6 seconds. I avoided a simple image slider due to the cropping issues on different screen sizes. This space is where the company can make important announcements.</p>
+            <img src="./assets/homepageArtboard 1_1@2x.png">
+          </div>
+        </div> -->
+
+      </div>
+      
+
+    </div>
+
+    <script>
+const slider = document.getElementById('before-after-slider');
+const before = document.getElementById('before-image');
+const beforeImage = before.getElementsByTagName('img')[0];
+const resizer = document.getElementById('resizer');
+
+let active = false;
+
+//Sort overflow out for Overlay Image
+document.addEventListener("DOMContentLoaded", function() {
+  let width = slider.offsetWidth;
+  console.log(width);
+  beforeImage.style.width = width + 'px';
+});
+
+//Adjust width of image on resize 
+window.addEventListener('resize', function() {
+  let width = slider.offsetWidth;
+  console.log(width);
+  beforeImage.style.width = width + 'px';
+})
+
+resizer.addEventListener('mousedown',function(){
+  active = true;
+ resizer.classList.add('resize');
+
+});
+
+document.body.addEventListener('mouseup',function(){
+  active = false;
+ resizer.classList.remove('resize');
+});
+
+document.body.addEventListener('mouseleave', function() {
+  active = false;
+  resizer.classList.remove('resize');
+});
+
+document.body.addEventListener('mousemove',function(e){
+  if (!active) return;
+  let x = e.pageX;
+  x -= slider.getBoundingClientRect().left;
+  slideIt(x);
+  pauseEvent(e);
+});
+
+resizer.addEventListener('touchstart',function(){
+  active = true;
+  resizer.classList.add('resize');
+});
+
+document.body.addEventListener('touchend',function(){
+  active = false;
+  resizer.classList.remove('resize');
+});
+
+document.body.addEventListener('touchcancel',function(){
+  active = false;
+  resizer.classList.remove('resize');
+});
+
+//calculation for dragging on touch devices
+document.body.addEventListener('touchmove',function(e){
+  if (!active) return;
+  let x;
+  
+  let i;
+  for (i=0; i < e.changedTouches.length; i++) {
+  x = e.changedTouches[i].pageX; 
+  }
+  
+  x -= slider.getBoundingClientRect().left;
+  slideIt(x);
+  pauseEvent(e);
+});
+
+function slideIt(x){
+    let transform = Math.max(0,(Math.min(x,slider.offsetWidth)));
+    before.style.width = transform+"px";
+    resizer.style.left = transform-0+"px";
+}
+
+//stop divs being selected.
+function pauseEvent(e){
+    if(e.stopPropagation) e.stopPropagation();
+    if(e.preventDefault) e.preventDefault();
+    e.cancelBubble=true;
+    e.returnValue=false;
+    return false;
+}
+
+    </script>
+  </body>
+</html>
