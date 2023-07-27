@@ -168,11 +168,14 @@ canvas {
 }
 
 .code a, .design a {
-  color: #5664dd;
+  color: #ccd1ff;
+  transition: .2s;
 }
 
 .code a:hover, .design a:hover {
-  color: #a056dd;
+  color: #e1bcff;
+  background-color: #cfceff29;
+  border-radius: 3px;
 }
 
 
@@ -360,6 +363,8 @@ max-width: 150px;
 
 .resume a:hover {
   color: #a056dd;
+  background-color: #cfceff;
+  border-radius: 3px;
 }
 
 .resume .bio, .resume .links {
